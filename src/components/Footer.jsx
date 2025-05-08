@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row">
           {/* Logo & Description */}
           <div className="col-md-4 mb-4">
-            <img src={logo} alt="Logo" className="mb-3" style={{ width: '130px' }} />
+            <img src={logo} alt="Logo" className="mb-2" style={{ width: '130px' }} />
             <p style={{ fontSize: '0.9rem' }}>
               Whether it's a romantic escape, a family vacation, or a solo retreat, we're here to make your time in Kodaikanal truly unforgettable.
             </p>
@@ -17,8 +17,8 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="col-md-4 mb-4">
-            <h1 className="mb-3 fs-4">Quick Links</h1>
-            <ul className="list-unstyled">
+            <h1 className="mb-4 fs-4">Quick Links</h1>
+            <ul className="list-unstyled" style={{ fontSize: '0.9rem' }}>
               <li><a href="#about" className="text-white text-decoration-none">About Us</a></li>
               <li><a href="#rooms" className="text-white text-decoration-none">Services</a></li>
               <li><a href="#amenities" className="text-white text-decoration-none">Amenities</a></li>
@@ -28,8 +28,8 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="col-md-4 mb-4">
-            <h1 className="mb-3 fs-4">Contact</h1>
-            <ul className="list-unstyled small">
+            <h1 className="mb-4 fs-4">Contact</h1>
+            <ul className="list-unstyled small" style={{ fontSize: '0.9rem' }}>
               <li><i className="me-2 fas fa-envelope"></i> elkarhomestay@gmail.com</li>
               <li><i className="me-2 fas fa-phone"></i> +91 7299537537</li>
               <li><i className="me-2 fas fa-map-marker-alt"></i> Address</li>

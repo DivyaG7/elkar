@@ -33,10 +33,32 @@ h1{
 }
 
 /* Room section style */
+
+#rooms .carousel-control-prev,
+#rooms .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  margin: 20px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+#rooms .carousel-control-prev-icon,
+#rooms .carousel-control-next-icon {
+  background-size: 70% 70%;
+  filter: invert(1);
+}
+
+#rooms .carousel-control-prev:hover,
+#rooms .carousel-control-next:hover {
+  background-color: rgba(141, 177, 50, 0.7);
+}
+
+
+
 .slide-wrapper {
-  background: url('./assets/room1.png') center center no-repeat;
-  background-size: cover;
-  background-position: center;
   max-width: 100vw;
   overflow: hidden;
   min-height: 100vh;
