@@ -6,6 +6,7 @@ import ExperienceSection from './components/ExperienceSection';
 import Facilities from './components/Facilities';
 import Footer from './components/Footer';
 import HeroCarousel from './components/HeroCarousel';
+import LocationScroller from './components/LocationScroller';
 import NavbarComponent from './components/Navbar';
 import NewsCarousel from './components/NewsCarousel';
 import RoomCarousel from './components/RoomCarousel';
@@ -21,6 +22,7 @@ function App() {
       <ExperienceSection />
       <Facilities />
       <TestimonialCarousel />
+      <LocationScroller />
       <NewsCarousel />
       <ContactSection />
       <Footer />

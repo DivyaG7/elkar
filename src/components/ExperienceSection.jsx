@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import jeep from '../assets/Jeep.png'
 import hill from '../assets/hill.png'
 import tracking from '../assets/tracking.png'
+import honeymoon from '../assets/honeymoon.png'
 
 const activities = [
     { title: "HILL CLIMBING", image: jeep },
     { title: "HILL CLIMBING", image: hill },
     { title: "JEEP SAFARI", image: jeep },
     { title: "TREKKING", image: tracking },
-    { title: "HONEYMOON", image: jeep },
+    { title: "HONEYMOON", image: honeymoon },
 ];
 
 const ExperienceSection = () => {

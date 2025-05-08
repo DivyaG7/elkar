@@ -1,12 +1,13 @@
 // components/LocationScroller.js
 import React, { useState } from 'react';
-import './LocationScroller.css';
+import silicon from '../assets/silicon.png'
+import guna from '../assets/guna.png'
 
 const locations = [
-  { name: 'Dolphin Nose', image: '/images/bg1.jpg' },
-  { name: 'Silent Valley', image: '/images/bg2.jpg' },
-  { name: 'Guna Cave', image: '/images/bg3.jpg' },
-  { name: 'Pillar Rocks', image: '/images/bg4.jpg' },
+  { name: 'Silent Valley', image: silicon },
+  { name: 'Guna Cave', image: guna },
+  { name: 'Silent Valley', image: silicon },
+  { name: 'Guna Cave', image: guna },
 ];
 
 const LocationScroller = () => {
