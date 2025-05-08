@@ -1,6 +1,8 @@
 import React from 'react';
 import { Carousel, Button, Container } from 'react-bootstrap';
 import room from '../assets/room1.png'
+import room2 from '../assets/room2.png'
+import room3 from '../assets/room3.png'
 
 const RoomCarousel = () => {
   const slides = [
@@ -11,12 +13,12 @@ const RoomCarousel = () => {
     },
     {
       title: 'FAMILY ROOM',
-      image: room,
+      image: room2,
       description: 'We foster a cultureb of Innovation that enriches lives through transformative solutions and innovative ideas that resonate with our global Community',
     },
     {
       title: 'ELITE ROOM',
-      image: room,
+      image: room3,
       description: 'We foster a cultureb of Innovation that enriches lives through transformative solutions and innovative ideas that resonate with our global Community',
     },
   ];

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Carousel, Button } from 'react-bootstrap';
 import Modal from 'react-modal';
 import slide from '../assets/slide.png'
+import slide2 from '../assets/slide2.png'
 import playbtn from '../assets/playbtn.png'
 
 Modal.setAppElement('#root'); // Important for accessibility
@@ -71,7 +72,7 @@ const HeroCarousel = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={slide}
+                        src={slide2}
                         alt="Second slide"
                         style={{ height: '100vh', objectFit: 'cover' }}
                     />

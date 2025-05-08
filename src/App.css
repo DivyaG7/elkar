@@ -328,3 +328,46 @@ h1{
     font-size: 3rem !important;
   }
 }
+
+
+/* location scroller section style */
+
+.scroller-container {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.scroll-text {
+  white-space: nowrap;
+  animation: scroll-left 30s linear infinite;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  gap: 4rem;
+  color: white;
+}
+
+.scroll-item {
+  cursor: pointer;
+  padding: 0 1rem;
+  transition: transform 0.3s ease;
+}
+
+.scroll-item:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
