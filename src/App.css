@@ -41,7 +41,7 @@ h1{
   top: 50%;
   margin: 20px;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: white;
   border-radius: 50%;
 }
 
@@ -53,7 +53,7 @@ h1{
 
 #rooms .carousel-control-prev:hover,
 #rooms .carousel-control-next:hover {
-  background-color: rgba(141, 177, 50, 0.7);
+  background-color: rgba(141, 177, 50, 0.8);
 }
 
 
