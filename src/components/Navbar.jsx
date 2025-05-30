@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Container, Navbar, Nav } from 'react-bootstrap';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import logo from '../assets/logo.png'
 
 const NavbarComponent = () => {
@@ -43,12 +44,14 @@ const NavbarComponent = () => {
               <div style={{ fontSize: '0.9rem', fontWeight: '500' }}>
                 <a href="mailto:elkarshomestay@gmail.com" className="text-decoration-none text-white">
                   elkarshomestay@gmail.com
-                </a>
+                </a>  
+                <i className="ms-2 fas fa-envelope"></i>
               </div>
               <div style={{ fontSize: '0.8rem' }}>
                 <a href="tel:+917299537537" className="text-decoration-none text-white">
                   +91 7299537537
-                </a>
+                </a> 
+                <i className="ms-2 fas fa-phone"></i>
               </div>
               <div style={{ fontSize: '0.8rem' }}>
                 <a
@@ -58,7 +61,8 @@ const NavbarComponent = () => {
                   className="text-decoration-none text-white"
                 >
                   Location
-                </a>
+                </a> 
+                <i className="ms-2 fas fa-map-marker-alt"></i>
               </div>
             </div>
           </Navbar.Collapse>
