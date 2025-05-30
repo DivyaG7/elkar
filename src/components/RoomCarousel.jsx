@@ -25,6 +25,7 @@ const RoomCarousel = () => {
 
   return (
     <Container fluid className="p-0" id='rooms'>
+      <h1 className='p-5'>Explore Our Rooms</h1>
       <Carousel controls={true} indicators={false} interval={5000} fade >
         {slides.map((slide, index) => (
           <Carousel.Item key={index}>
