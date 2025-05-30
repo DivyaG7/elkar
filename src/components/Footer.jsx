@@ -69,7 +69,7 @@ const Footer = () => {
                 +91 7299537537
               </a></li>
               <li><i className="me-2 fas fa-map-marker-alt"></i> <a
-                href="https://www.google.com/maps?q=Elkar+Homestay+Location"  // Replace with exact location URL if available
+                href="https://maps.app.goo.gl/TGsxCWH3mvrVjt4KA"  // Replace with exact location URL if available
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-decoration-none text-white"

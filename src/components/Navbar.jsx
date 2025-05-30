@@ -55,7 +55,7 @@ const NavbarComponent = () => {
               </div>
               <div style={{ fontSize: '0.8rem' }}>
                 <a
-                  href="https://www.google.com/maps?q=Elkar+Homestay+Location"  // Replace with exact location URL if available
+                  href="https://maps.app.goo.gl/TGsxCWH3mvrVjt4KA"  // Replace with exact location URL if available
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-decoration-none text-white"
@@ -68,7 +68,6 @@ const NavbarComponent = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
     </>
   )
 }

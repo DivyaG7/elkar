@@ -406,6 +406,7 @@ h1{
 }
 .scroll-to-top:hover {
   background-color: #a27048;
+  color: #000;
 }
 
 @keyframes bounceUp {
