@@ -1,32 +1,13 @@
 
 import './App.css';
+import Home from './pages/Home';
 import './responsive.css'
-import About from './components/About';
-import ContactSection from './components/ContactSection';
-import ExperienceSection from './components/ExperienceSection';
-import Facilities from './components/Facilities';
-import Footer from './components/Footer';
-import HeroCarousel from './components/HeroCarousel';
-import LocationScroller from './components/LocationScroller';
-import NavbarComponent from './components/Navbar';
-import NewsCarousel from './components/NewsCarousel';
-import RoomCarousel from './components/RoomCarousel';
-import TestimonialCarousel from './components/TestimonialCarousel';
+
 
 function App() {
   return (
     <div className="App">
-      <NavbarComponent />
-      <HeroCarousel />
-      <About />
-      <RoomCarousel />
-      <ExperienceSection />
-      <Facilities />
-      <TestimonialCarousel />
-      <LocationScroller />
-      <NewsCarousel />
-      <ContactSection />
-      <Footer />
+      <Home />
     </div>
   );
 }
