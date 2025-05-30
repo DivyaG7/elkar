@@ -98,4 +98,9 @@
     #home h1 {
         font-size: 4rem !important;
     }
+
+    .facility .faci-cont>div {
+        width: 160px;
+        height: 130px;
+    }
 }
