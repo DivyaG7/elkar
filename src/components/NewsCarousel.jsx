@@ -37,10 +37,27 @@ const NewsCarousel = () => {
       <Swiper
         modules={[Navigation]}
         spaceBetween={30}
-        slidesPerView={3}
         navigation
         loop
         className="news-swiper"
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
       >
         {newsData.map((news, index) => (
           <SwiperSlide key={index}>

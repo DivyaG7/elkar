@@ -1,6 +1,13 @@
 
 /* Navbar section style */
 /* About section style */
+/* Room section style */
+/* Image transition section style */
+/* Facility section style */
+/* Testimonial section style */
+/* News section style */
+/* Contact section style */
+/* location scroller section style */
 
 
 h1{
@@ -20,6 +27,10 @@ h1{
 .navbar .navlink{
   color: #E29E1C;
   font-size: 14px;
+}
+
+#home .caro-img{
+  height: 90vh !important;
 }
 
 /* About section style */
@@ -162,7 +173,7 @@ h1{
 
 /* Facility section style */
 .facility .faci-cont > div{
-  width: 130px;
+  width: 160px;
   height: 130px;
 }
 

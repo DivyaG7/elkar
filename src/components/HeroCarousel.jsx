@@ -19,10 +19,9 @@ const HeroCarousel = () => {
             <Carousel fade indicators={false}>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 caro-img"
                         src={slide}
                         alt="First slide"
-                        style={{ height: '100vh', objectFit: 'cover' }}
                     />
                     <Carousel.Caption className="mb-5" style={{
                         position: 'absolute',
@@ -71,10 +70,9 @@ const HeroCarousel = () => {
 
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 caro-img"
                         src={slide2}
                         alt="Second slide"
-                        style={{ height: '100vh', objectFit: 'cover' }}
                     />
                     <Carousel.Caption className="mb-5" style={{
                         position: 'absolute',

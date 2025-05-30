@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import jeep from '../assets/Jeep.png'
+import campfire from '../assets/campfire.png'
 import hill from '../assets/hill.png'
 import tracking from '../assets/tracking.png'
 import honeymoon from '../assets/honeymoon.png'
 
 const activities = [
-    { title: "HILL CLIMBING", image: jeep },
+    { title: "CAMPFIRE", image: campfire },
     { title: "HILL CLIMBING", image: hill },
     { title: "JEEP SAFARI", image: jeep },
     { title: "TREKKING", image: tracking },
@@ -17,7 +18,7 @@ const ExperienceSection = () => {
 
     return (
         <>
-        <div className='pt-5 pb-5 pe-2 ps-2'>
+        <div className='experience pt-5 pb-5 pe-2 ps-2'>
             <h1>Escape to the Mist. Stay <br></br>for the Magic</h1>
             <p>A once in a lifetime wellness experience in an idyllic setting, inviting you to <br></br>
             discover and connect with yourself and your vital rhythm.</p>

@@ -30,7 +30,7 @@ const ContactSection = () => {
 
 
     return (
-        <section className="contact-section text-white">
+        <section className="contact-section text-white" id='contact'>
             <div className="container">
                 <div className="text-center mb-5">
                     <h1 className="display-5 fw-light">Planning a stay<br />or have a question?<br />Reach out</h1>
@@ -50,22 +50,22 @@ const ContactSection = () => {
 
                         <div className="col-md-7 form">
                             <form onSubmit={handleSubmit}>
-                                <div className="row mb-3">
-                                    <div className="col">
+                                <div className="row">
+                                    <div className="col-md-6 col-12 mb-3">
                                         <label className="form-label small">FIRST NAME</label>
                                         <input type="text" className="form-control" name="firstName" required />
                                     </div>
-                                    <div className="col">
+                                    <div className="col-md-6 col-12 mb-3">
                                         <label className="form-label small">LAST NAME</label>
                                         <input type="text" className="form-control" name="lastName" required />
                                     </div>
                                 </div>
-                                <div className="row mb-3">
-                                    <div className="col">
+                                <div className="row">
+                                    <div className="col-md-6 col-12 mb-3">
                                         <label className="form-label small">E MAIL</label>
                                         <input type="email" className="form-control" name="email" required />
                                     </div>
-                                    <div className="col">
+                                    <div className="col-md-6 col-12 mb-3">
                                         <label className="form-label small">PHONE NUMBER</label>
                                         <input type="tel" className="form-control" name="phone" />
                                     </div>

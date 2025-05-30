@@ -1,5 +1,6 @@
 
 import './App.css';
+import './responsive.css'
 import About from './components/About';
 import ContactSection from './components/ContactSection';
 import ExperienceSection from './components/ExperienceSection';

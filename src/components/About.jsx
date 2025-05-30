@@ -6,9 +6,9 @@ const About = () => {
     return (
         <>
             <section className='about' id='about'>
-                <div className='container pt-4'>
+                <div className='container pt-5'>
                     <div className='row'>
-                        <div className='col-md-6'>
+                        <div className='col-md-6 about-head'>
                             <span>ABOUT US</span>
                             <h1 style={{fontSize: '5rem'}}>Embrace the<br></br>
                                 Elkar’s<br></br>
