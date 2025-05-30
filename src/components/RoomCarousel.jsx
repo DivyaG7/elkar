@@ -37,7 +37,7 @@ const RoomCarousel = () => {
             }}>
               <div className="slide-card text-center">
                 <h2 className="room-title">{slide.title}</h2>
-                <img src={slide.image} alt={slide.title} className="room-img" />
+                <img src={slide.image} alt={slide.title} className="room-img" loading="lazy" />
                 <p className="room-desc">{slide.description}</p>
                 <Button className="book-btn">BOOK NOW</Button>
               </div>

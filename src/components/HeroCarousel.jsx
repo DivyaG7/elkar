@@ -22,6 +22,7 @@ const HeroCarousel = () => {
                         className="d-block w-100 caro-img"
                         src={slide}
                         alt="First slide"
+                        loading="lazy"
                     />
                     <Carousel.Caption className="mb-5" style={{
                         position: 'absolute',
@@ -73,6 +74,7 @@ const HeroCarousel = () => {
                         className="d-block w-100 caro-img"
                         src={slide2}
                         alt="Second slide"
+                        loading="lazy"
                     />
                     <Carousel.Caption className="mb-5" style={{
                         position: 'absolute',

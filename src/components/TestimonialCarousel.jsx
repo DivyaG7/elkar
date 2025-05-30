@@ -30,7 +30,7 @@ const TestimonialCarousel = () => {
   return (
     <div className="testimonial-section text-center">
       <h1 className="testimonial-heading">Client Testimonial</h1>
-      <img src={testimonials[index].image} alt="client" className="testimonial-img" />
+      <img src={testimonials[index].image} alt="client" className="testimonial-img" loading="lazy" />
       <h4 className="testimonial-title">{testimonials[index].title}</h4>
       <p className="testimonial-review">{testimonials[index].review}</p>
       <p className="testimonial-name">{testimonials[index].name}</p>

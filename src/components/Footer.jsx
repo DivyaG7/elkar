@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import logo from '../assets/logo.png'
+import logo from '../assets/footer-logo.png'
 
 const Footer = () => {
 

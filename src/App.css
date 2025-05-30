@@ -35,8 +35,14 @@ h1{
 
 /* About section style */
 .about{
-  background: #6A6A6A;
+  background: #343435;
   color: white;
+}
+
+.about .about-head{
+  background: url('assets/about-hero-bg.png');
+  background-position: center;
+  background-size: cover;
 }
 
 .about .abt-container{
