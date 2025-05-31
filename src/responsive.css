@@ -18,6 +18,10 @@
         height: 60vh !important;
     }
 
+    .about{
+        height: 200vh;
+    }
+
     .about .about-head {
         display: flex !important;
         flex-direction: column !important;

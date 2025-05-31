@@ -1,13 +1,13 @@
 import React from 'react'
 import about from '../assets/about.png'
-import aboutbg from '../assets/about-bg.png'
+// import aboutbg from '../assets/about-bg.png'
 
 const About = () => {
     return (
         <>
             <section className='about' id='about'>
-                <div className='about-head'>
-                    <div className='container pt-5'>
+                <div className='about-head d-flex flex-column justify-content-center align-items-center'>
+                    <div className='container pt-5 pb-5'>
                         <div className='row'>
                             <div className='col-md-6'>
                                 <span>ABOUT US</span>
@@ -30,11 +30,17 @@ const About = () => {
                                         you need for a restful and comfort stay.</p>
                                 </div>
                                 <img src={about} alt='about-image' className='img-fluid' />
+
                             </div>
                         </div>
                     </div>
+
+                    <div className='about-hill p-4 mt-5'>
+                        <p className='fs-3'>Our Luxury Homestay offers a peacefull & Pleasant accomadation</p>
+                    </div>
                 </div>
-                <img src={aboutbg} alt='aboutbg' className='img-fluid' loading="lazy" />
+
+
             </section>
         </>
     )
