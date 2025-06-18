@@ -42,15 +42,17 @@ const NavbarComponent = () => {
             {/* Right - Mail and Address */}
             <div className="text-end d-none d-lg-block">
               <div style={{ fontSize: '0.9rem', fontWeight: '500' }}>
-                <a href="mailto:elkarshomestay@gmail.com" className="text-decoration-none text-white">
-                  elkarshomestay@gmail.com
-                </a>  
+                <a href="mailto:	
+elkars@elkarshomestay.com" className="text-decoration-none text-white">
+
+                  elkars@elkarshomestay.com
+                </a>
                 <i className="ms-2 fas fa-envelope"></i>
               </div>
               <div style={{ fontSize: '0.8rem' }}>
                 <a href="tel:+917299537537" className="text-decoration-none text-white">
                   +91 7299537537
-                </a> 
+                </a>
                 <i className="ms-2 fas fa-phone"></i>
               </div>
               <div style={{ fontSize: '0.8rem' }}>
@@ -61,7 +63,7 @@ const NavbarComponent = () => {
                   className="text-decoration-none text-white"
                 >
                   Location
-                </a> 
+                </a>
                 <i className="ms-2 fas fa-map-marker-alt"></i>
               </div>
             </div>

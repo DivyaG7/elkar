@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import slide from '../assets/slide.png'
 import slide2 from '../assets/slide2.png'
 import playbtn from '../assets/playbtn.png'
+import video from '../assets/Elkar home stay video.mp4'
 
 Modal.setAppElement('#root'); // Important for accessibility
 
@@ -136,9 +137,9 @@ const HeroCarousel = () => {
                     }
                 }}
             >
-                <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <div style={{ position: 'relative', width: '100%', height: '100%'}}>
                     <video
-                        src="/your-video.mp4"
+                        src={video}
                         controls
                         autoPlay
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}

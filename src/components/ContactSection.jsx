@@ -2,31 +2,56 @@ import React from 'react';
 
 const ContactSection = () => {
 
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     const formData = new FormData(e.target);
+    //     const data = Object.fromEntries(formData.entries());
+
+    //     try {
+    //         const res = await fetch('http://localhost:5000/api/contact', {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-Type': 'application/json'
+    //             },
+    //             body: JSON.stringify(data)
+    //         });
+
+    //         if (res.ok) {
+    //             alert('Message sent successfully!');
+    //             e.target.reset();
+    //         } else {
+    //             alert('Failed to send message');
+    //         }
+    //     } catch (error) {
+    //         console.error(error);
+    //         alert('Error sending message');
+    //     }
+    // };
+
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+
         const formData = new FormData(e.target);
-        const data = Object.fromEntries(formData.entries());
 
         try {
-            const res = await fetch('http://localhost:5000/api/contact', {
+            const response = await fetch('https://mediumvioletred-leopard-773928.hostingersite.com/contact-form.php', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
+                body: formData,
             });
 
-            if (res.ok) {
-                alert('Message sent successfully!');
-                e.target.reset();
+            const result = await response.json();
+            if (response.ok) {
+                alert(result.message || 'Message sent!');
+                e.target.reset(); 
             } else {
-                alert('Failed to send message');
+                alert(result.error || 'Failed to send.');
             }
         } catch (error) {
-            console.error(error);
-            alert('Error sending message');
+            alert('An error occurred: ' + error.message);
         }
     };
+
 
 
     return (

@@ -7,34 +7,61 @@ const Footer = () => {
   const [email, setEmail] = useState('');
   const [agreed, setAgreed] = useState(false);
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   if (!agreed) {
+  //     alert('Please agree to the terms and policies before subscribing.');
+  //     return;
+  //   }
+
+  //   try {
+  //     const response = await fetch('http://localhost:5000/api/newsletter', {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/json' },
+  //       body: JSON.stringify({ email, agreed }),
+  //     });
+
+  //     const result = await response.json();
+  //     if (response.ok) {
+  //       alert('Subscribed successfully!');
+  //       setEmail('');
+  //       setAgreed(false);
+  //     } else {
+  //       alert(result.error || 'Failed to subscribe');
+  //     }
+  //   } catch (error) {
+  //     console.error(error);
+  //     alert('Server error');
+  //   }
+  // };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!agreed) {
-      alert('Please agree to the terms and policies before subscribing.');
-      return;
-    }
+    const formData = new FormData();
+    formData.append('email', email);
+    formData.append('agreed', agreed.toString());
 
     try {
-      const response = await fetch('http://localhost:5000/api/newsletter', {
+      const response = await fetch('https://mediumvioletred-leopard-773928.hostingersite.com/newsletter-form.php', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, agreed }),
+        body: formData,
       });
 
       const result = await response.json();
       if (response.ok) {
-        alert('Subscribed successfully!');
+        alert(result.message || 'Subscribed successfully!');
         setEmail('');
         setAgreed(false);
       } else {
-        alert(result.error || 'Failed to subscribe');
+        alert(result.error || 'Subscription failed.');
       }
     } catch (error) {
-      console.error(error);
-      alert('Server error');
+      alert('Error: ' + error.message);
     }
   };
+
 
 
   return (
@@ -64,7 +91,8 @@ const Footer = () => {
           <div className="col-md-4 mb-4">
             <h1 className="mb-4 fs-4">Contact</h1>
             <ul className="list-unstyled small" style={{ fontSize: '0.9rem' }}>
-              <li><i className="me-2 fas fa-envelope"></i><a href="mailto:elkarshomestay@gmail.com" className="text-decoration-none text-white"> elkarshomestay@gmail.com </a></li>
+              <li><i className="me-2 fas fa-envelope"></i><a href="mailto:	
+elkars@elkarshomestay.com" className="text-decoration-none text-white"> 	elkars@elkarshomestay.com </a></li>
               <li><i className="me-2 fas fa-phone"></i><a href="tel:+917299537537" className="text-decoration-none text-white">
                 +91 7299537537
               </a></li>
