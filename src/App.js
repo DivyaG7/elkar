@@ -20,7 +20,7 @@ function App() {
       setTimeout(() => {
         setLoading(false); // remove after animation
       }, 800); // match animation duration
-    }, 1000); // preloader duration
+    }, 2000); // preloader duration
 
     return () => clearTimeout(timer);
   }, []);
