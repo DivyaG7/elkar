@@ -83,7 +83,7 @@ const RoomTabContent = ({
             </div>
 
             {/* Check-in/out times */}
-            <Row className="p-4 rounded mt-5">
+            <Row className="p-4 rounded mt-5 checkin">
                 <Col md={6}>
                     <h4 className='fw-bold'>Check in Time</h4>
                     <div className='mt-4 shadow p-4 w-50 rounded-4' style={{ background: '#F2F6F7' }}>
