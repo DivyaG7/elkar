@@ -35,7 +35,7 @@ const ContactSection = () => {
         const formData = new FormData(e.target);
 
         try {
-            const response = await fetch('https://mediumvioletred-leopard-773928.hostingersite.com/contact-form.php', {
+            const response = await fetch('https://elkarshomestay.com/contact-form.php', {
                 method: 'POST',
                 body: formData,
             });

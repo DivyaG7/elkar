@@ -6,17 +6,13 @@ const About = () => {
     return (
         <>
             <section className='about' id='about'>
-                <div className='about-head d-flex flex-column justify-content-center align-items-center'>
                     <div className='container pt-5 pb-5'>
                         <div className='row'>
                             <div className='col-md-6'>
-                                <span>ABOUT US</span>
-                                <h1 style={{ fontSize: '5rem' }}>Embrace the<br></br>
-                                    Elkar’s<br></br>
-                                    Lifestyle</h1>
-                            </div>
-                            <div className='col-md-6 d-flex flex-column justify-content-center align-items-center'>
-                                <div className='abt-container'>
+                                <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>Embrace the Elkar’s Lifestyle</h1>
+                                <h1 className='fw-bold'>About Us</h1>
+
+                                <div className='abt-container mt-4'>
                                     <p style={{ fontSize: '.9rem' }}>Welcome to your home in the hills— Elkar’s Homestay, nestled in the
                                         heart of Kodaikanal’s misty landscapes & Mountain views surrounded
                                         by  plumbs and avacoda farms, tranquil lakes, and the rolling
@@ -29,16 +25,14 @@ const About = () => {
                                         offers stunning views, cozy interiors, and all the modern amenities
                                         you need for a restful and comfort stay.</p>
                                 </div>
-                                <img src={about} alt='about-image' className='img-fluid' />
+                            </div>
+                            <div className='col-md-6 d-flex flex-column justify-content-center align-items-center'>
+                                
+                                <img src={about} alt='about-image' className='img-fluid w-75' />
 
                             </div>
                         </div>
                     </div>
-
-                    <div className='about-hill p-4 mt-5'>
-                        <p className='fs-3'>Our Luxury Homestay offers a peacefull & Pleasant accomadation</p>
-                    </div>
-                </div>
 
 
             </section>

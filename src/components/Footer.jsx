@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import logo from '../assets/footer-logo.png'
 
 const Footer = () => {
 
-  const [email, setEmail] = useState('');
-  const [agreed, setAgreed] = useState(false);
+  // const [email, setEmail] = useState('');
+  // const [agreed, setAgreed] = useState(false);
 
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
@@ -36,31 +36,31 @@ const Footer = () => {
   //   }
   // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    const formData = new FormData();
-    formData.append('email', email);
-    formData.append('agreed', agreed.toString());
+  //   const formData = new FormData();
+  //   formData.append('email', email);
+  //   formData.append('agreed', agreed.toString());
 
-    try {
-      const response = await fetch('https://mediumvioletred-leopard-773928.hostingersite.com/newsletter-form.php', {
-        method: 'POST',
-        body: formData,
-      });
+  //   try {
+  //     const response = await fetch('https://elkarshomestay.com/newsletter-form.php', {
+  //       method: 'POST',
+  //       body: formData,
+  //     });
 
-      const result = await response.json();
-      if (response.ok) {
-        alert(result.message || 'Subscribed successfully!');
-        setEmail('');
-        setAgreed(false);
-      } else {
-        alert(result.error || 'Subscription failed.');
-      }
-    } catch (error) {
-      alert('Error: ' + error.message);
-    }
-  };
+  //     const result = await response.json();
+  //     if (response.ok) {
+  //       alert(result.message || 'Subscribed successfully!');
+  //       setEmail('');
+  //       setAgreed(false);
+  //     } else {
+  //       alert(result.error || 'Subscription failed.');
+  //     }
+  //   } catch (error) {
+  //     alert('Error: ' + error.message);
+  //   }
+  // };
 
 
 
@@ -81,7 +81,7 @@ const Footer = () => {
             <h1 className="mb-4 fs-4">Quick Links</h1>
             <ul className="list-unstyled" style={{ fontSize: '0.9rem' }}>
               <li><a href="#about" className="text-white text-decoration-none">About Us</a></li>
-              <li><a href="#rooms" className="text-white text-decoration-none">Services</a></li>
+              <li><a href="/room" className="text-white text-decoration-none">Services</a></li>
               <li><a href="#amenties" className="text-white text-decoration-none">Amenities</a></li>
               <li><a href="#contact" className="text-white text-decoration-none">Contact Us</a></li>
             </ul>
@@ -91,8 +91,7 @@ const Footer = () => {
           <div className="col-md-4 mb-4">
             <h1 className="mb-4 fs-4">Contact</h1>
             <ul className="list-unstyled small" style={{ fontSize: '0.9rem' }}>
-              <li><i className="me-2 fas fa-envelope"></i><a href="mailto:	
-elkars@elkarshomestay.com" className="text-decoration-none text-white"> 	elkars@elkarshomestay.com </a></li>
+              <li><i className="me-2 fas fa-envelope"></i><a href="mailto:elkars@elkarshomestay.com" className="text-decoration-none text-white"> 	elkars@elkarshomestay.com </a></li>
               <li><i className="me-2 fas fa-phone"></i><a href="tel:+917299537537" className="text-decoration-none text-white">
                 +91 7299537537
               </a></li>
@@ -108,9 +107,8 @@ elkars@elkarshomestay.com" className="text-decoration-none text-white"> 	elkars@
           </div>
         </div>
 
-        <hr className="border-top border-light opacity-25 my-4" />
+        {/* <hr className="border-top border-light opacity-25 my-4" />
 
-        {/* Newsletter Section */}
         <div className="row align-items-center">
           <div className="col-md-6 mb-3 mb-md-0">
             <h6 className="mb-0">Sign Up To Get Latest Update</h6>
@@ -140,7 +138,7 @@ elkars@elkarshomestay.com" className="text-decoration-none text-white"> 	elkars@
               </label>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
-import { Carousel, Button } from 'react-bootstrap';
-import Modal from 'react-modal';
-import slide from '../assets/slide.png'
-import slide2 from '../assets/slide2.png'
-import playbtn from '../assets/playbtn.png'
-import video from '../assets/Elkar home stay video.mp4'
 
-Modal.setAppElement('#root'); // Important for accessibility
+import { Carousel, Button } from 'react-bootstrap';
+import slide from '../assets/slide1.png'
+import slide2 from '../assets/slide2.png'
+import slide3 from '../assets/slide3.png'
+import { useNavigate } from 'react-router-dom';
+
+
 
 const HeroCarousel = () => {
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-
-    const handleOpenModal = () => setModalIsOpen(true);
-    const handleCloseModal = () => setModalIsOpen(false);
+    const navigate = useNavigate();
 
     return (
         <div style={{ position: 'relative' }} id='home'>
@@ -42,28 +38,30 @@ const HeroCarousel = () => {
 
 
                         <h1 style={{
-                            fontSize: '7rem', fontWeight: '400',
+                            fontSize: '5rem', fontWeight: '400',
                             marginTop: '70px'
-                        }}><span style={{ fontSize: '1rem', letterSpacing: '6px', fontWeight: '400' }}>EMBRACE LIFE SHEPHERD MOVEMENTS</span><br></br>ELKAR’S LIVING</h1>
+                        }}><span style={{ fontSize: '1rem', letterSpacing: '6px', fontWeight: '400' }}>EMBRACE LIFE SHEPHERD MOVEMENTS</span><br></br>PREMIUM ROOM</h1>
 
                         <Button
                             variant="light"
                             size="lg"
-                            onClick={handleOpenModal}
+                            onClick={() => navigate('/room?tab=1')} // tab=1 for first room
                             style={{
-                                background: 'transparent',
-                                border: 'none',
-                                lineHeight: '1',
-                                padding: '0',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
+                                padding: '12px 32px',
+                                backgroundColor: 'transparent',
+                                fontWeight: '600',
+                                fontSize: '1.2rem',
+                                color: '#fff',
+                                marginTop: '100px',
                                 boxShadow: '0 0 20px rgba(0,0,0,0.4)',
-                                marginTop: '100px'
+                                border: '1px solid #fff',
+                                borderRadius: '30px',
                             }}
                         >
-                            <img src={playbtn} alt='playbtn' className='img-fluid w-75' />
+                            
+                            BOOK NOW
                         </Button>
+
 
                     </Carousel.Caption>
 
@@ -92,72 +90,81 @@ const HeroCarousel = () => {
                         background: 'rgba(0,0,0,0.3)',  // optional dark overlay
                     }} >
                         <h1 style={{
-                            fontSize: '7rem', fontWeight: '400',
+                            fontSize: '5rem', fontWeight: '400',
                             marginTop: '70px'
-                        }}><span style={{ fontSize: '1rem', letterSpacing: '6px', fontWeight: '400' }}>EMBRACE LIFE SHEPHERD MOVEMENTS</span><br></br>ELKAR’S LIVING</h1>
+                        }}><span style={{ fontSize: '1rem', letterSpacing: '6px', fontWeight: '400' }}>EMBRACE LIFE SHEPHERD MOVEMENTS</span><br></br>FAMILY ROOM</h1>
 
                         <Button
                             variant="light"
                             size="lg"
-                            onClick={handleOpenModal}
+                            onClick={() => navigate('/room?tab=2')} // tab=1 for first room
                             style={{
-                                background: 'transparent',
-                                border: 'none',
-                                lineHeight: '1',
-                                padding: '0',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
+                                padding: '12px 32px',
+                                backgroundColor: 'transparent',
+                                fontWeight: '600',
+                                fontSize: '1.2rem',
+                                color: '#fff',
+                                marginTop: '100px',
                                 boxShadow: '0 0 20px rgba(0,0,0,0.4)',
-                                marginTop: '100px'
+                                border: '1px solid #fff',
+                                borderRadius: '30px',
                             }}
                         >
-                            <img src={playbtn} alt='playbtn' className='img-fluid w-75' />
+                            BOOK NOW
                         </Button>
+
                     </Carousel.Caption>
                 </Carousel.Item>
-            </Carousel>
 
-            {/* Video Modal */}
-            <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={handleCloseModal}
-                contentLabel="Video Modal"
-                style={{
-                    overlay: {
-                        backgroundColor: 'rgba(0, 0, 0, 0.9)',
-                        zIndex: 9999, // super high to cover everything
-                    },
-                    content: {
-                        background: 'black',
-                        padding: 0,
-                        inset: 0,
-                        border: 'none',
-                        overflow: 'hidden',
-                    }
-                }}
-            >
-                <div style={{ position: 'relative', width: '100%', height: '100%'}}>
-                    <video
-                        src={video}
-                        controls
-                        autoPlay
-                        style={{ width: '100%', height: '100%', objectFit: 'fit' }}
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100 caro-img"
+                        src={slide3}
+                        alt="Second slide"
+                        loading="lazy"
                     />
-                    <Button
-                        variant="danger"
-                        onClick={handleCloseModal}
-                        style={{
-                            position: 'absolute',
-                            top: 20,
-                            right: 20,
-                            zIndex: 9999
-                        }}
-                    >
-                        ✖
-                    </Button>
-                </div>
-            </Modal>
+                    <Carousel.Caption className="mb-5" style={{
+                        position: 'absolute',
+                        top: 0,
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: 'white',
+                        textAlign: 'center',
+                        background: 'rgba(0,0,0,0.3)',  // optional dark overlay
+                    }} >
+                        <h1 style={{
+                            fontSize: '5rem', fontWeight: '400',
+                            marginTop: '70px'
+                        }}><span style={{ fontSize: '1rem', letterSpacing: '6px', fontWeight: '400' }}>EMBRACE LIFE SHEPHERD MOVEMENTS</span><br></br>ELITE ROOM</h1>
+
+                        <Button
+                            variant="light"
+                            size="lg"
+                            onClick={() => navigate('/room?tab=3')} // tab=1 for first room
+                            style={{
+                                padding: '12px 32px',
+                                backgroundColor: 'transparent',
+                                fontWeight: '600',
+                                fontSize: '1.2rem',
+                                color: '#fff',
+                                marginTop: '100px',
+                                boxShadow: '0 0 20px rgba(0,0,0,0.4)',
+                                border: '1px solid #fff',
+                                borderRadius: '30px',
+                            }}
+                        >
+                            BOOK NOW
+                        </Button>
+
+                    </Carousel.Caption>
+                </Carousel.Item>
+
+            </Carousel>
 
         </div>
     );

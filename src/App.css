@@ -71,7 +71,7 @@
 
 
 
-h1{
+h1,h2,h3,h4,h5{
   font-family: "Italiana", sans-serif !important;
 }
 
@@ -81,7 +81,7 @@ h1{
 
 /* Navbar section style */
 .navbar{
-  background: #343435;
+  background: #043927;
   color: white;
 }
 
@@ -96,16 +96,10 @@ h1{
 
 /* About section style */
 .about{
-  background: #343435;
-  color: white;
+  background: #fff;
+  color: #000;
 }
 
-.about{
-  background: url('assets/about-bg.png');
-  background-position: center;
-  background-size: cover;
-  height: 170vh;
-}
 
 .about .abt-container{
   width: 80%;
@@ -257,6 +251,35 @@ h1{
   width: 180px;
   height: 130px;
 }
+
+.e-pass{
+  background: url('./assets/e-pass-bg.png') no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.e-pass h1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.e-pass button{
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 
 /* Testimonial section style */
 .testimonial-section {
