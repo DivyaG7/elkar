@@ -101,7 +101,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-decoration-none text-white"
               >
-                Address
+                Attuvampatti, kodaikanal
               </a></li>
             </ul>
           </div>

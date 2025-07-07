@@ -6,7 +6,7 @@ const About = () => {
     return (
         <>
             <section className='about' id='about'>
-                    <div className='container pt-5 pb-0'>
+                    <div className='container pt-5 pb-5'>
                         <div className='row'>
                             <div className='col-md-6'>
                                 <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>Embrace the Elkar’s Lifestyle</h1>

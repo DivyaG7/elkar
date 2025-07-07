@@ -75,7 +75,7 @@ const NavbarComponent = () => {
                 rel="noopener noreferrer"
                 className="text-decoration-none text-white"
               >
-                Location
+                Attuvampatti, kodaikanal
               </a>
               <i className="ms-2 fas fa-map-marker-alt"></i>
             </div>

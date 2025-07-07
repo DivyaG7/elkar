@@ -7,6 +7,9 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from './assets/logo.png';
 
+import ScrollTopButton from './components/ScrollTopButton';
+
+
 // Wrapper to use location inside
 function AppWrapper() {
   const location = useLocation();
@@ -36,12 +39,15 @@ function AppWrapper() {
           <img src={logo} alt='logo' className="logo-animation" />
         </div>
       ) : (
-        <div className="main-content animate-in">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/room" element={<Room />} />
-          </Routes>
-        </div>
+        <>
+          <div className="main-content animate-in">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/room" element={<Room />} />
+            </Routes>
+          </div>
+          <ScrollTopButton />
+        </>
       )}
     </div>
   );

@@ -81,7 +81,8 @@ h1,h2,h3,h4,h5{
 
 /* Navbar section style */
 .navbar{
-  background: #043927;
+  /* background: #043927; */
+  background: #76a400;
   color: white;
 }
 
@@ -501,7 +502,7 @@ h1,h2,h3,h4,h5{
   font-size: 18px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   cursor: pointer;
-  z-index: 1000;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;

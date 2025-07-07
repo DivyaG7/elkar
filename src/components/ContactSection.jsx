@@ -43,7 +43,7 @@ const ContactSection = () => {
             const result = await response.json();
             if (response.ok) {
                 alert(result.message || 'Message sent!');
-                e.target.reset(); 
+                e.target.reset();
             } else {
                 alert(result.error || 'Failed to send.');
             }
